@@ -1,3 +1,3 @@
 # Welcome to My Portfolio!
 
-Hi, I'm [Your Name], a passionate [Your Profession] with expertise in [Your Skills]. I love [what you love about your field] and am dedicated to [your mission or goal]. Explore my projects and experience to learn more about what I do!
+Hi, I'm Bakhbyergyen Yerjan, a passionate aspiring ML engineer with expertise in Robotics, Embedded Systems and Aerospace Engineering. I love programming RC cars and am dedicated to building safer, faster and more robust systems. Explore my projects and experience to learn more about what I do!
