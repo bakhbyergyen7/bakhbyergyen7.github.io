@@ -1,2 +1,2 @@
-# bakhbyergyen7.github.io
-This will be my first portfolio
+# Bakhbyergyen Yerjan
+Welcome to my first portfolio!
