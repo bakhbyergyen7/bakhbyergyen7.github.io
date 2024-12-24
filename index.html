@@ -1,71 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakhbyergyen Yerjan - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio of Bakhbyergyen Yerjan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakhbyergyen Yerjan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="logo">Bakhbyergyen<span>Y</span></div>
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Mobile Menu Toggle Button -->
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <div style="display: flex; align-items: center;">
-            <img src="images/portrait.jpg" alt="Your Name" style="width:100%;max-width:150px;height:auto;">
-            <div>
-                <p>Hi, everyone! My name is Bakhbyergyen (aka "Bakh"), and I am a second year Computer Science Master's student at the University of Kansas. I obtained my bachelor's degree in Aerospace Engineering in 2021, also from KU. </p>
-                <p>I grew up playing chess and competing in regional math olympiads. As a kid, I would always wonder why many of the trivial house chores are still being done by humans and not just be automated. Often times, typical reaction would be, "You shouldn't be lazy." This enabled me better appreciate science and technology from a young age. </p>
-                <p>I can fully communicate in four different languages: English, Mongolian, Kazakh and Turkish. </p>
-                <p>In my free time, I enjoy playing and watching soccer. Like many, my idol is Cristiano Ronaldo, on and off the pitch. Reading is my other hobby. Authors like Dan Brown and Haruki Murakami are gems that the world is blessed with. </p>
-            </div>
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m <span>Bakh</span></h1>
+      <p>
+        A Computer Science Master’s student at KU, exploring <strong>robotics</strong>,
+        <strong>automation</strong>, and building solutions that make a difference.
+      </p>
+      <a href="#projects" class="btn-primary">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <img
+        src="images/portrait.jpg"
+        alt="Portrait of Bakhbyergyen"
+        class="about-img"
+      />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a detail-oriented, curious thinker passionate about robotics and
+          autonomous systems. My work revolves around turning ideas into
+          tangible projects—whether it’s developing SLAM algorithms or
+          implementing real-time control for autonomous vehicles.
+        </p>
+        <p>
+          Currently pursuing my Master’s in Computer Science at the University
+          of Kansas, I thrive on collaborative problem-solving, hands-on
+          experimentation, and lifelong learning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <!-- Example skill card -->
+      <div class="skill-card">
+        <img src="images/icon-cpp.png" alt="C++ Icon" />
+        <h3>C++</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/icon-python.png" alt="Python Icon" />
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/icon-ros.png" alt="ROS Icon" />
+        <h3>ROS</h3>
+      </div>
+      <div class="skill-card">
+        <img src="images/icon-slam.png" alt="SLAM Icon" />
+        <h3>SLAM</h3>
+      </div>
+      <!-- Add more skill-cards as you like -->
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <img
+          src="images/f1tenth.jpg"
+          alt="F1tenth Autonomous Racing"
+          class="project-img"
+        />
+        <div class="project-info">
+          <h3>F1tenth Autonomous Racing</h3>
+          <p>
+            Implemented SLAM Toolbox for mapping, developed a global raceline
+            trajectory, and utilized pure pursuit control for real-time path
+            tracking.
+          </p>
+          <a
+            href="https://github.com/yourusername/f1tenth-racing"
+            target="_blank"
+            class="btn-secondary"
+          >
+            View on GitHub
+          </a>
         </div>
+      </div>
 
-    </section>
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <img
+          src="images/robotarm.jpg"
+          alt="Robot Arm Project"
+          class="project-img"
+        />
+        <div class="project-info">
+          <h3>Robotic Arm Automation</h3>
+          <p>
+            Built a simulation for a 6-DOF robotic arm using ROS MoveIt,
+            focusing on pick-and-place operations with optimized motion
+            planning.
+          </p>
+          <a
+            href="https://github.com/yourusername/robotic-arm-automation"
+            target="_blank"
+            class="btn-secondary"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
 
-    <section id="resume">
-        <h1>Resume</h1>
-        <!-- Insert resume content here -->
-        <p>Download my full resume <a href="https://github.com/bakhbyergyen7/bakhbyergyen7.github.io/blob/main/Resume_Bakh_v6.pdf" target="_blank">here</a>.</p>
-    </section>
+      <!-- Add more project-cards as needed -->
+    </div>
+  </section>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <!-- List of projects -->
-        <h3>1. F1tenth Autonomous Racing (Ongoing)</h3>
-        <p> I was able to successfully map my RC car's surrounding and localize itself on the map using SLAM Toolbox. On the generated map, global raceline trajectory algorithm was implemented so that the car could navigate through the globally set path using pure_pursuit control.</p>
-        <p> My next steps include figuring out the local planner and control. MPC ...</p>
-        <h3>2. Bla bla bla</h3>
-    </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>
+      Have a question, idea, or just want to connect? Feel free to reach out!
+    </p>
+    <div class="contact-info">
+      <p>Email: <strong>yerjanb@ku.edu</strong></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yerjanb/">@yerjanb</a></p>
+      <p>Twitter: <a href="https://twitter.com/Bakh_Y">@Bakh_Y</a></p>
+    </div>
+  </section>
 
-    <section id="blog">
-        <h1>Blog</h1>
-        <!-- List of blog posts -->
-    </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> Bakhbyergyen Yerjan. All rights reserved.
+    </p>
+  </footer>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>yerjanb AT ku DOT edu</p>
-        <p><a href="https://www.linkedin.com/in/yerjanb/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://twitter.com/Bakh_Y" target="_blank">X</a></p>
-        <!-- Contact form or information -->
-    </section>
-
-    <footer>
-        <p>Bakhbyergyen Yerjan © 2024</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
-
