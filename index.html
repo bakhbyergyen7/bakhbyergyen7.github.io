@@ -1,173 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Portfolio of Bakhbyergyen Yerjan" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bakhbyergyen Yerjan | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
 </head>
+
 <body>
-  <!-- HEADER & NAVIGATION -->
-  <header class="header">
-    <div class="logo">Bakhbyergyen<span>Y</span></div>
-    
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <!-- Mobile Menu Toggle Button -->
-      <div class="burger" id="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I’m <span>Bakh</span></h1>
-      <p>
-        A Computer Science Master’s student at KU, exploring <strong>robotics</strong>,
-        <strong>automation</strong>, and building solutions that make a difference.
-      </p>
-      <a href="#projects" class="btn-primary">Explore My Work</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <div class="about-container">
-      <img
-        src="images/portrait.jpg"
-        alt="Portrait of Bakhbyergyen"
-        class="about-img"
-      />
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m a detail-oriented, curious thinker passionate about robotics and
-          autonomous systems. My work revolves around turning ideas into
-          tangible projects—whether it’s developing SLAM algorithms or
-          implementing real-time control for autonomous vehicles.
-        </p>
-        <p>
-          Currently pursuing my Master’s in Computer Science at the University
-          of Kansas, I thrive on collaborative problem-solving, hands-on
-          experimentation, and lifelong learning.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <!-- Example skill card -->
-      <div class="skill-card">
-        <img src="images/icon-cpp.png" alt="C++ Icon" />
-        <h3>C++</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/icon-python.png" alt="Python Icon" />
-        <h3>Python</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/icon-ros.png" alt="ROS Icon" />
-        <h3>ROS</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/icon-slam.png" alt="SLAM Icon" />
-        <h3>SLAM</h3>
-      </div>
-      <!-- Add more skill-cards as you like -->
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-        <img
-          src="images/f1tenth.jpg"
-          alt="F1tenth Autonomous Racing"
-          class="project-img"
-        />
-        <div class="project-info">
-          <h3>F1tenth Autonomous Racing</h3>
-          <p>
-            Implemented SLAM Toolbox for mapping, developed a global raceline
-            trajectory, and utilized pure pursuit control for real-time path
-            tracking.
-          </p>
-          <a
-            href="https://github.com/yourusername/f1tenth-racing"
-            target="_blank"
-            class="btn-secondary"
-          >
-            View on GitHub
-          </a>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="your_resume.pdf" target="_blank">Resume</a></li>  </ul>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-        <img
-          src="images/robotarm.jpg"
-          alt="Robot Arm Project"
-          class="project-img"
-        />
-        <div class="project-info">
-          <h3>Robotic Arm Automation</h3>
-          <p>
-            Built a simulation for a 6-DOF robotic arm using ROS MoveIt,
-            focusing on pick-and-place operations with optimized motion
-            planning.
-          </p>
-          <a
-            href="https://github.com/yourusername/robotic-arm-automation"
-            target="_blank"
-            class="btn-secondary"
-          >
-            View on GitHub
-          </a>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Write a concise and engaging summary about yourself, your interests, and your career goals. Highlight your
+                passion for software engineering, machine learning, or data engineering and mention your key skills and
+                experiences.</p>
         </div>
-      </div>
+    </section>
 
-      <!-- Add more project-cards as needed -->
-    </div>
-  </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-    <p>
-      Have a question, idea, or just want to connect? Feel free to reach out!
-    </p>
-    <div class="contact-info">
-      <p>Email: <strong>yerjanb@ku.edu</strong></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yerjanb/">@yerjanb</a></p>
-      <p>Twitter: <a href="https://twitter.com/Bakh_Y">@Bakh_Y</a></p>
-    </div>
-  </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project. Mention technologies used and key achievements.</p>
+                    <a href="project1-link" target="_blank">View Project</a>
+                    <img src="project1.png" alt="Project 1 Screenshot">
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>
-      &copy; <span id="year"></span> Bakhbyergyen Yerjan. All rights reserved.
-    </p>
-  </footer>
+                </div>
 
-  <!-- JAVASCRIPT -->
-  <script src="script.js"></script>
+               </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+       </section>
+
+    <section id="experience" class="section">
+    </section>
+
+    <section id="education" class="section">
+    </section>
+
+ <footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,13 @@
-// Mobile Navigation Toggle
-const burger = document.getElementById("burger");
-const navLinks = document.querySelector(".nav-links");
+// script.js
 
-burger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
+// Add any interactive JavaScript here.  For example, smooth scrolling:
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
-
-// Dynamic Year in Footer
-const yearSpan = document.getElementById("year");
-yearSpan.textContent = new Date().getFullYear();
