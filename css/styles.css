@@ -11044,3 +11044,10 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.portfolio-item img {
+  width: 100%; /* Make images responsive */
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* Ensure images maintain aspect ratio and fill the set dimensions */
+  border-radius: 8px; /* Optional: rounded corners for consistent appearance */
+}
